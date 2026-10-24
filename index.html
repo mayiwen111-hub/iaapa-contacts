@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/jpeg;base64,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">
+<title>IAAAPA Contacts 联系人</title>
+<style>
+:root {
+  --primary: #4F46E5;
+  --primary-dark: #3730A3;
+  --primary-light: #6366F1;
+  --accent: #10B981;
+  --danger: #EF4444;
+  --bg: #F3F4F6;
+  --card: #FFFFFF;
+  --text: #1F2937;
+  --text-light: #6B7280;
+  --border: #E5E7EB;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+}
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
+html, body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); font-size: 17px; line-height: 1.5; overscroll-behavior: none; }
+body { min-height: 100vh; padding-bottom: env(safe-area-inset-bottom); }
+input, textarea, select, button { font-size: 17px; font-family: inherit; }
+.app { max-width: 600px; margin: 0 auto; min-height: 100vh; position: relative; }
+
+/* Top bar */
+.topbar { position: sticky; top: 0; z-index: 100; background: var(--card); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; padding-top: max(12px, env(safe-area-inset-top)); }
+.topbar h1 { font-size: 18px; font-weight: 700; color: var(--text); }
+.topbar .actions { display: flex; gap: 8px; }
+.btn-icon { background: none; border: none; color: var(--primary); font-size: 14px; font-weight: 600; padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+.btn-icon:active { background: rgba(79,70,229,0.1); }
+
+/* Pages */
+.page { display: none; padding: 16px; }
+.page.active { display: block; }
+
+/* Form */
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: 15px; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+.form-group label .req { color: var(--danger); margin-left: 2px; }
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%; padding: 14px; border: 2px solid var(--border); border-radius: var(--radius);
+  background: var(--card); color: var(--text); transition: border-color 0.2s;
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--primary); }
+.form-group select { -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; background-size: 20px; padding-right: 44px; }
+.form-group input[readonly] { background: #F9FAFB; color: var(--text-light); }
+.form-group .hint { font-size: 13px; color: var(--text-light); margin-top: 4px; }
+
+/* Date buttons */
+.date-btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.date-btn { flex: 1; min-width: calc(25% - 6px); padding: 14px 4px; border: 2px solid var(--border); border-radius: var(--radius); background: var(--card); color: var(--text); font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.15s; text-align: center; }
+.date-btn:active { border-color: var(--primary); }
+.date-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* Media buttons */
+.media-row { display: flex; gap: 12px; margin-bottom: 16px; }
+.media-btn { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 16px 8px; border: 2px dashed var(--border); border-radius: var(--radius); background: var(--card); cursor: pointer; transition: all 0.2s; text-align: center; }
+.media-btn:active { border-color: var(--primary); background: rgba(79,70,229,0.05); }
+.media-btn .icon { font-size: 32px; }
+.media-btn .label { font-size: 15px; font-weight: 600; }
+.media-btn .sub { font-size: 12px; color: var(--text-light); }
+.media-preview { width: 100%; margin-top: 8px; border-radius: var(--radius); overflow: hidden; }
+.media-preview img { width: 100%; display: block; }
+.media-preview video { width: 100%; display: block; }
+.media-preview .remove-media { display: block; width: 100%; padding: 10px; background: var(--danger); color: #fff; border: none; font-weight: 600; font-size: 15px; }
+.media-preview .remove-media:active { opacity: 0.8; }
+
+/* Photo grid for multiple photos */
+.photo-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.photo-thumb-wrap { position: relative; width: 72px; height: 72px; }
+.photo-thumb { width: 72px; height: 72px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); }
+.photo-remove-btn { position: absolute; top: -6px; right: -6px; width: 22px; height: 22px; border-radius: 50%; background: var(--danger); color: #fff; border: 2px solid #fff; font-size: 12px; line-height: 1; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+
+/* Account manager single-select chips */
+.manager-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.manager-chip { display: flex; align-items: center; gap: 6px; padding: 10px 18px; border: 2px solid var(--border); border-radius: 24px; background: var(--card); cursor: pointer; transition: all 0.15s; font-size: 16px; font-weight: 600; }
+.manager-chip input { width: 18px; height: 18px; accent-color: var(--primary); cursor: pointer; }
+.manager-chip:has(input:checked) { background: rgba(79,70,229,0.1); border-color: var(--primary); color: var(--primary); }
+
+/* Big save button */
+.btn-save {
+  width: 100%; padding: 18px; font-size: 20px; font-weight: 700; color: #fff;
+  background: var(--primary); border: none; border-radius: var(--radius); cursor: pointer;
+  box-shadow: var(--shadow); transition: background 0.2s; margin-top: 8px;
+}
+.btn-save:active { background: var(--primary-dark); }
+.btn-save:disabled { background: var(--text-light); }
+
+/* Floating save bar (always visible on form page) */
+.save-bar {
+  position: fixed; bottom: 62px; left: 50%; transform: translateX(-50%);
+  width: 100%; max-width: 600px; padding: 10px 16px 12px;
+  background: rgba(243,244,246,0.95); backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border); z-index: 95;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
+}
+.btn-save-floating {
+  width: 100%; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+  background: var(--primary); border: none; border-radius: var(--radius); cursor: pointer;
+  box-shadow: var(--shadow); transition: background 0.2s;
+}
+.btn-save-floating:active { background: var(--primary-dark); }
+.btn-cancel-floating {
+  width: 100%; padding: 12px; font-size: 15px; font-weight: 600; color: var(--text);
+  background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); cursor: pointer;
+}
+.btn-cancel-floating:active { background: #F9FAFB; }
+
+/* Form page needs extra bottom padding for floating save bar + bottom nav */
+#formPage { padding-bottom: 140px; }
+#formPage .btn-save { display: none; }
+#formPage #cancelEditWrap { margin-bottom: 90px; }
+
+/* Secondary buttons */
+.btn-secondary { padding: 12px 20px; font-size: 16px; font-weight: 600; color: var(--text); background: var(--card); border: 2px solid var(--border); border-radius: var(--radius); cursor: pointer; }
+.btn-secondary:active { background: #F9FAFB; }
+.btn-danger { padding: 12px 20px; font-size: 16px; font-weight: 600; color: #fff; background: var(--danger); border: none; border-radius: var(--radius); cursor: pointer; }
+.btn-danger:active { opacity: 0.85; }
+
+/* List */
+.list-empty { text-align: center; padding: 60px 20px; color: var(--text-light); }
+.list-empty .icon { font-size: 48px; margin-bottom: 12px; }
+.list-empty p { font-size: 16px; }
+.list-empty .sub { font-size: 14px; margin-top: 4px; }
+.date-group { margin-bottom: 24px; }
+.date-group h3 { font-size: 15px; font-weight: 700; color: var(--text-light); padding: 8px 0; border-bottom: 1px solid var(--border); margin-bottom: 8px; }
+.contact-card { display: flex; gap: 12px; background: var(--card); border-radius: var(--radius); padding: 12px; margin-bottom: 8px; box-shadow: var(--shadow); cursor: pointer; transition: transform 0.1s; align-items: center; }
+.contact-card:active { transform: scale(0.98); }
+.contact-thumb { width: 56px; height: 56px; border-radius: 10px; background: #E5E7EB; flex-shrink: 0; object-fit: cover; }
+.contact-thumb-placeholder { width: 56px; height: 56px; border-radius: 10px; background: var(--primary-light); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700; flex-shrink: 0; }
+.contact-info { flex: 1; min-width: 0; }
+.contact-info .name { font-size: 17px; font-weight: 700; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.contact-info .sub { font-size: 14px; color: var(--text-light); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.contact-info .badges { display: flex; gap: 4px; margin-top: 4px; }
+.contact-info .badge { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #F3F4F6; }
+.badge-photo { color: #059669; }
+.badge-video { color: #7C3AED; }
+
+/* Detail */
+.detail-header { display: flex; gap: 16px; align-items: center; margin-bottom: 20px; }
+.detail-avatar { width: 80px; height: 80px; border-radius: 14px; object-fit: cover; background: #E5E7EB; }
+.detail-avatar-placeholder { width: 80px; height: 80px; border-radius: 14px; background: var(--primary-light); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 700; }
+.detail-header .info .name { font-size: 22px; font-weight: 700; }
+.detail-header .info .sub { font-size: 16px; color: var(--text-light); }
+.detail-section { background: var(--card); border-radius: var(--radius); padding: 16px; margin-bottom: 12px; box-shadow: var(--shadow); }
+.detail-section .label { font-size: 13px; color: var(--text-light); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.detail-section .value { font-size: 17px; word-break: break-all; }
+.detail-section .value a { color: var(--primary); text-decoration: none; }
+.detail-section .media-large { width: 100%; border-radius: 8px; margin-top: 8px; display: block; }
+.detail-actions { display: flex; gap: 12px; margin-top: 16px; }
+.detail-actions button { flex: 1; }
+
+/* Toast */
+.toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(100px); background: rgba(0,0,0,0.85); color: #fff; padding: 12px 24px; border-radius: 24px; font-size: 15px; font-weight: 600; z-index: 9999; opacity: 0; transition: all 0.3s; pointer-events: none; max-width: 90%; text-align: center; }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* Loading overlay */
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 9998; }
+.overlay.show { display: flex; }
+.overlay-content { background: var(--card); border-radius: var(--radius); padding: 24px; text-align: center; max-width: 300px; }
+.overlay-content .spinner { width: 40px; height: 40px; border: 4px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 12px; }
+.overlay-content p { font-size: 15px; color: var(--text); }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Bottom nav */
+.bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 600px; display: flex; background: var(--card); border-top: 1px solid var(--border); z-index: 90; padding-bottom: env(safe-area-inset-bottom); }
+.nav-btn { flex: 1; padding: 12px 8px; text-align: center; background: none; border: none; color: var(--text-light); font-size: 12px; cursor: pointer; }
+.nav-btn .icon { font-size: 22px; display: block; margin-bottom: 2px; }
+.nav-btn.active { color: var(--primary); font-weight: 600; }
+
+/* ROI Calculator */
+.calc-header { margin-bottom: 20px; }
+.calc-title { font-size: 22px; font-weight: 700; }
+.calc-subtitle { font-size: 14px; color: var(--text-light); }
+
+.slider-wrap { background: var(--card); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); margin-bottom: 16px; }
+.slider-value-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px; }
+.slider-value { font-size: 32px; font-weight: 700; color: var(--primary); }
+.slider-unit { font-size: 15px; color: var(--text-light); }
+.slider-wrap input[type=range] {
+  width: 100%; height: 10px; border-radius: 5px; background: #E5E7EB; outline: none; -webkit-appearance: none;
+}
+.slider-wrap input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); cursor: pointer; border: 3px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.slider-labels { display: flex; justify-content: space-between; font-size: 13px; color: var(--text-light); margin-top: 8px; }
+
+.calc-summary { background: #FEF3C7; border-left: 4px solid #F59E0B; border-radius: var(--radius); padding: 16px; margin-bottom: 16px; }
+.calc-summary-label { font-size: 14px; color: #92400E; font-weight: 600; }
+.calc-summary-value { font-size: 28px; font-weight: 700; color: #92400E; }
+
+.calc-table-wrap { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow-x: auto; margin-bottom: 16px; }
+.calc-table { width: 100%; border-collapse: collapse; min-width: 360px; }
+.calc-table th { background: var(--text); color: #fff; font-size: 13px; font-weight: 600; padding: 12px 8px; text-align: left; }
+.calc-table td { padding: 18px 8px; border-bottom: 1px solid var(--border); font-size: 15px; vertical-align: middle; height: 52px; }
+.calc-table tbody tr td:first-child { min-height: 60px; }
+.calc-table tr:last-child td { border-bottom: none; }
+.calc-table strong { display: block; font-size: 16px; }
+.calc-table small { font-size: 12px; color: var(--text-light); }
+.calc-table .sub-line { display: block; margin-top: 0; margin-bottom: 0; line-height: 1.3; }
+.tag-best { display: inline-block; background: #F59E0B; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 5px; border-radius: 4px; margin-top: 4px; }
+.tag-popular { display: inline-block; background: #10B981; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 5px; border-radius: 4px; margin-left: 6px; vertical-align: middle; }
+.calc-note { background: var(--card); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); font-size: 13px; color: var(--text-light); line-height: 1.6; }
+.calc-note p { margin-bottom: 4px; }
+
+/* Edit mode indicator */
+.edit-badge { display: inline-block; background: #FEF3C7; color: #92400E; font-size: 13px; font-weight: 600; padding: 4px 10px; border-radius: 6px; margin-bottom: 12px; }
+
+/* Hidden file inputs */
+input[type=file] { display: none; }
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- Top bar -->
+<div class="topbar" style="background-color: rgb(255, 192, 0);">
+  <h1 id="pageTitle" style="white-space: pre-wrap;">Timori Photo Future Customers</h1>
+  <div class="actions">
+  </div>
+</div>
+
+<!-- Form Page -->
+<div class="page active" id="formPage">
+  <div id="editIndicator"></div>
+
+  <div class="form-group">
+    <label>Date 日期</label>
+    <div class="date-btn-row" id="dateBtnRow">
+      <button type="button" class="date-btn" data-date="2025-11-17" onclick="selectDate('2025-11-17', this)">11/17</button>
+      <button type="button" class="date-btn" data-date="2025-11-18" onclick="selectDate('2025-11-18', this)">11/18</button>
+      <button type="button" class="date-btn" data-date="2025-11-19" onclick="selectDate('2025-11-19', this)">11/19</button>
+      <button type="button" class="date-btn" data-date="2025-11-20" onclick="selectDate('2025-11-20', this)">11/20</button>
+    </div>
+    <input type="date" id="fDate" style="margin-top:8px;">
+  </div>
+
+  <div class="form-group">
+    <label>Account Manager 客户负责人 <span class="req">*</span></label>
+    <div class="manager-row">
+      <label class="manager-chip">
+        <input type="radio" name="fManager" id="fManager1" value="Zoey"> <span>Zoey</span>
+      </label>
+      <label class="manager-chip">
+        <input type="radio" name="fManager" id="fManager2" value="Katherine"> <span>Katherine</span>
+      </label>
+      <label class="manager-chip">
+        <input type="radio" name="fManager" id="fManager3" value="Qiucen"> <span>Qiucen</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Name 姓名 <span class="req">*</span></label>
+    <input type="text" id="fName" placeholder="Required 必填" required autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label>Country 国家 <span class="req">*</span></label>
+    <select id="fCountry">
+      <option value="USA 美国" selected>USA 美国</option>
+      <option value="China 中国">China 中国</option>
+      <option value="Japan 日本">Japan 日本</option>
+      <option value="Korea 韩国">Korea 韩国</option>
+      <option value="Singapore 新加坡">Singapore 新加坡</option>
+      <option value="Germany 德国">Germany 德国</option>
+      <option value="UK 英国">UK 英国</option>
+      <option value="France 法国">France 法国</option>
+      <option value="Canada 加拿大">Canada 加拿大</option>
+      <option value="Australia 澳大利亚">Australia 澳大利亚</option>
+      <option value="Netherlands 荷兰">Netherlands 荷兰</option>
+      <option value="Italy 意大利">Italy 意大利</option>
+      <option value="Spain 西班牙">Spain 西班牙</option>
+      <option value="Switzerland 瑞士">Switzerland 瑞士</option>
+      <option value="Sweden 瑞典">Sweden 瑞典</option>
+      <option value="UAE 阿联酋">UAE 阿联酋</option>
+      <option value="Saudi Arabia 沙特阿拉伯">Saudi Arabia 沙特阿拉伯</option>
+      <option value="India 印度">India 印度</option>
+      <option value="Thailand 泰国">Thailand 泰国</option>
+      <option value="Malaysia 马来西亚">Malaysia 马来西亚</option>
+      <option value="Indonesia 印度尼西亚">Indonesia 印度尼西亚</option>
+      <option value="Philippines 菲律宾">Philippines 菲律宾</option>
+      <option value="Brazil 巴西">Brazil 巴西</option>
+      <option value="Mexico 墨西哥">Mexico 墨西哥</option>
+      <option value="Russia 俄罗斯">Russia 俄罗斯</option>
+      <option value="Other 其他">Other 其他</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Company 公司 <span class="req">*</span></label>
+    <input type="text" id="fCompany" placeholder="Required 必填" autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label>Title 职位</label>
+    <input type="text" id="fTitle" placeholder="Optional 选填" autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label>Phone 电话</label>
+    <input type="tel" id="fPhone" placeholder="Optional 选填" autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label>Email 邮箱 <span class="req">*</span></label>
+    <input type="email" id="fEmail" placeholder="Required 必填" autocomplete="off">
+  </div>
+
+  <div class="form-group">
+    <label>Other Contact 其他联系方式</label>
+    <textarea id="fOther" rows="2" placeholder="WeChat / WhatsApp /LinkedIn (Optional 选填)"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>Photo 合照 <span class="req">*</span> <small style="font-weight:normal;color:var(--text-light);">(多张可添加 Multiple OK)</small></label>
+    <div class="media-row">
+      <button class="media-btn" onclick="capturePhoto()">
+        <span class="icon">📷</span>
+        <span class="label">Take Photo 拍照</span>
+        <span class="sub">Open Camera 打开相机</span>
+      </button>
+      <button class="media-btn" onclick="pickPhoto()">
+        <span class="icon">🖼️</span>
+        <span class="label">Album 相册</span>
+        <span class="sub">Pick Photo 选照片</span>
+      </button>
+    </div>
+    <input type="file" id="photoInput" accept="image/*" multiple>
+    <input type="file" id="photoInputCamera" accept="image/*" capture="environment">
+    <div id="photoPreview"></div>
+  </div>
+
+  <div class="form-group">
+    <label>Video 视频</label>
+    <div class="media-row">
+      <button class="media-btn" onclick="captureVideo()">
+        <span class="icon">🎥</span>
+        <span class="label">Record 录像</span>
+        <span class="sub">Open Camera 打开录像</span>
+      </button>
+      <button class="media-btn" onclick="pickVideo()">
+        <span class="icon">🎬</span>
+        <span class="label">Album 相册</span>
+        <span class="sub">Pick Video 选视频</span>
+      </button>
+    </div>
+    <input type="file" id="videoInput" accept="video/*">
+    <input type="file" id="videoInputCamera" accept="video/*" capture="environment">
+    <div id="videoPreview"></div>
+  </div>
+
+  <button class="btn-save" id="saveBtn" onclick="saveContact()">Save 保存</button>
+  <div id="cancelEditWrap" style="display:none; margin-top:12px;">
+    <button class="btn-secondary" style="width:100%" onclick="cancelEdit()">Cancel Edit 取消编辑</button>
+  </div>
+
+  <!-- Floating save bar for form page -->
+  <div class="save-bar" id="saveBar">
+    <button class="btn-save-floating" id="saveBtnFloat" onclick="saveContact()">Save 保存</button>
+    <button class="btn-cancel-floating" id="cancelBtnFloat" style="display:none; margin-top:8px;" onclick="cancelEdit()">Cancel Edit 取消编辑</button>
+  </div>
+</div>
+
+<!-- List Page -->
+<div class="page" id="listPage" style="padding-bottom:100px">
+  <div id="listContent"></div>
+</div>
+
+<!-- Detail Page -->
+<div class="page" id="detailPage" style="padding-bottom:70px">
+  <div id="detailContent"></div>
+</div>
+
+<!-- ROI Calculator Page -->
+<div class="page" id="calcPage" style="padding-bottom:90px">
+  <div class="calc-header">
+    <div class="calc-title">Newspapers printed per day</div>
+    <div class="calc-subtitle">每天打印张数 / 30天为估算</div>
+  </div>
+
+  <div class="slider-wrap">
+    <div class="slider-value-row">
+      <span class="slider-value" id="dailyValue">30</span>
+      <span class="slider-unit">/ day 张/天</span>
+    </div>
+    <input type="range" id="dailySlider" min="10" max="100" value="30" step="1" oninput="updateCalc()">
+    <div class="slider-labels">
+      <span>10</span>
+      <span>100</span>
+    </div>
+  </div>
+
+  <div class="calc-summary">
+    <div class="calc-summary-label">Monthly Revenue 月营收</div>
+    <div class="calc-summary-value" id="monthlyRevenue">$8,910</div>
+  </div>
+
+  <div class="calc-table-wrap">
+    <table class="calc-table">
+      <thead>
+        <tr>
+          <th>Model<br>模式</th>
+          <th>Your upfront<br> upfront</th>
+          <th>Monthly net<br>月净利</th>
+          <th>Payback<br>回本</th>
+        </tr>
+      </thead>
+      <tbody id="calcTableBody">
+        <tr>
+          <td><strong>01 · Buy</strong></td>
+          <td>$15,800</td>
+          <td id="buyNet">$8,019</td>
+          <td id="buyPayback">2.0 mo</td>
+        </tr>
+        <tr>
+          <td><strong>02 · Co-op</strong><small class="sub-line">you keep 70%</small><span class="tag-popular">POPULAR</span></td>
+          <td>$9,999</td>
+          <td id="coopNet">$5,472</td>
+          <td id="coopPayback">1.8 mo</td>
+        </tr>
+        <tr>
+          <td><strong>03 · Resource partner</strong></td>
+          <td>$0</td>
+          <td id="resourceNet">$1,568</td>
+          <td id="resourcePayback">Instant</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="calc-note">
+    <p>Estimates only. Revenue = newspapers/day × $9.90 × 30 days.</p>
+    <p>Option 01: 10% platform fee.</p>
+    <p>Option 02: 10% platform fee, then 70/30 split.</p>
+    <p>Option 03: 10% platform fee, then 20% of net revenue. No upfront.</p>
+    <p style="margin-top:8px;"><strong>Not included:</strong> your site costs (space, staffing, utilities).</p>
+  </div>
+</div>
+
+<!-- Bottom Nav -->
+<div class="bottom-nav">
+  <button class="nav-btn active" id="navForm" onclick="goForm()">
+    <span class="icon">✏️</span>
+    Add 录入
+  </button>
+  <button class="nav-btn" id="navList" onclick="goList()">
+    <span class="icon">📋</span>
+    List 列表
+  </button>
+  <button class="nav-btn" id="navCalc" onclick="goCalc()">
+    <span class="icon">🧮</span>
+    ROI 计算
+  </button>
+</div>
+
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Loading overlay -->
+<div class="overlay" id="overlay">
+  <div class="overlay-content">
+    <div class="spinner"></div>
+    <p id="overlayText">Processing 处理中...</p>
+  </div>
+</div>
+
+<script>
+// ============ IndexedDB Setup ============
+const DB_NAME = 'iaapa_contacts_db';
+const DB_VERSION = 1;
+const STORE_CONTACTS = 'contacts';
+const STORE_MEDIA = 'media';
+let db = null;
+
+function openDB() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    req.onupgradeneeded = (e) => {
+      const d = e.target.result;
+      if (!d.objectStoreNames.contains(STORE_CONTACTS)) d.createObjectStore(STORE_CONTACTS, { keyPath: 'id' });
+      if (!d.objectStoreNames.contains(STORE_MEDIA)) d.createObjectStore(STORE_MEDIA, { keyPath: 'id' });
+    };
+    req.onsuccess = () => { db = req.result; resolve(db); };
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbAdd(store, data) {
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(store, 'readwrite');
+    tx.objectStore(store).put(data);
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}
+function dbGet(store, id) {
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(store, 'readonly');
+    const req = tx.objectStore(store).get(id);
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+function dbGetAll(store) {
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(store, 'readonly');
+    const req = tx.objectStore(store).getAll();
+    req.onsuccess = () => resolve(req.result || []);
+    req.onerror = () => reject(req.error);
+  });
+}
+function dbDelete(store, id) {
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(store, 'readwrite');
+    tx.objectStore(store).delete(id);
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
+// ============ State ============
+let editingId = null;
+let currentPhotos = []; // [{blob, mime}]
+let currentVideoBlob = null;
+let currentVideoMime = 'video/mp4';
+let removedPhotoIds = []; // photo IDs removed during edit
+
+// ============ Helpers ============
+function genId() { return Date.now().toString(36) + Math.random().toString(36).substr(2, 5); }
+function todayStr() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+function toast(msg, dur=2000) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove('show'), dur);
+}
+function showOverlay(text) {
+  document.getElementById('overlayText').textContent = text;
+  document.getElementById('overlay').classList.add('show');
+}
+function hideOverlay() { document.getElementById('overlay').classList.remove('show'); }
+function sanitizeFilename(s) {
+  if (!s) return '';
+  return s.replace(/[\\/:*?"<>|\s]+/g, '_').replace(/_+/g,'_').replace(/^_|_$/g,'');
+}
+
+// ============ Page Navigation ============
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  window.scrollTo(0, 0);
+}
+function goForm() {
+  showPage('formPage');
+  document.getElementById('navForm').classList.add('active');
+  document.getElementById('pageTitle').textContent = editingId ? 'Edit Contact 编辑联系人' : 'Timori Photo';
+}
+function goList() {
+  showPage('listPage');
+  document.getElementById('navList').classList.add('active');
+  document.getElementById('pageTitle').textContent = 'Contact List 联系人列表';
+  renderList();
+}
+function goDetail(id) {
+  showPage('detailPage');
+  document.getElementById('pageTitle').textContent = 'Contact Detail 联系人详情';
+  renderDetail(id);
+}
+function goCalc() {
+  showPage('calcPage');
+  document.getElementById('navCalc').classList.add('active');
+  document.getElementById('pageTitle').textContent = 'ROI Calculator 回本计算器';
+  updateCalc();
+}
+
+// ============ ROI Calculator ============
+function updateCalc() {
+  const daily = parseInt(document.getElementById('dailySlider').value, 10);
+  document.getElementById('dailyValue').textContent = daily;
+
+  const price = 9.90;
+  const monthlyRevenue = daily * price * 30;
+  document.getElementById('monthlyRevenue').textContent = '$' + Math.round(monthlyRevenue).toLocaleString('en-US');
+
+  // Baseline monthly nets at 30/day (10% platform fee only, no payment/consumable fees)
+  const baseDaily = 30;
+  const buyNetBase = 8019;   // revenue × 0.9
+  const coopNetBase = 5613;   // revenue × 0.9 × 0.70
+  const resourceNetBase = 1604; // revenue × 0.9 × 0.20
+
+  // Scale linearly with daily volume
+  const buyNet = Math.round(buyNetBase * (daily / baseDaily));
+  const coopNet = Math.round(coopNetBase * (daily / baseDaily));
+  const resourceNet = Math.round(resourceNetBase * (daily / baseDaily));
+
+  document.getElementById('buyNet').textContent = '$' + buyNet.toLocaleString('en-US');
+  document.getElementById('coopNet').textContent = '$' + coopNet.toLocaleString('en-US');
+  document.getElementById('resourceNet').textContent = '$' + resourceNet.toLocaleString('en-US');
+
+  // Payback calculations
+  const buyUpfront = 15800;
+  const coopUpfront = 9999;
+
+  let buyPayback = (buyNet > 0) ? (buyUpfront / buyNet) : Infinity;
+  let coopPayback = (coopNet > 0) ? (coopUpfront / coopNet) : Infinity;
+
+  document.getElementById('buyPayback').textContent = formatPayback(buyPayback);
+  document.getElementById('coopPayback').textContent = formatPayback(coopPayback);
+  document.getElementById('resourcePayback').textContent = 'Instant';
+}
+
+function formatPayback(months) {
+  if (!isFinite(months)) return '∞';
+  if (months < 0.1) return 'Instant';
+  if (months < 1) return Math.round(months * 30) + ' days';
+  return months.toFixed(1) + ' mo';
+}
+
+// ============ Form ============
+function initForm() {
+  syncDateButtons(todayStr());
+  resetForm();
+}
+
+function syncDateButtons(dateStr) {
+  if (!dateStr) return;
+  document.getElementById('fDate').value = dateStr;
+  document.querySelectorAll('#dateBtnRow .date-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-date') === dateStr);
+  });
+}
+
+function selectDate(dateStr, btnEl) {
+  document.getElementById('fDate').value = dateStr;
+  document.querySelectorAll('#dateBtnRow .date-btn').forEach(b => b.classList.remove('active'));
+  if (btnEl) btnEl.classList.add('active');
+}
+
+function resetForm() {
+  document.getElementById('fName').value = '';
+  document.getElementById('fCountry').value = 'USA 美国';
+  document.getElementById('fCompany').value = '';
+  document.getElementById('fTitle').value = '';
+  document.getElementById('fPhone').value = '';
+  document.getElementById('fEmail').value = '';
+  document.getElementById('fOther').value = '';
+  document.querySelectorAll('input[name="fManager"]').forEach(el => el.checked = false);
+  currentPhotos = [];
+  removedPhotoIds = [];
+  currentVideoBlob = null;
+  document.getElementById('photoPreview').innerHTML = '';
+  document.getElementById('videoPreview').innerHTML = '';
+  document.getElementById('saveBtn').textContent = 'Save 保存';
+  syncDateButtons(todayStr());
+  document.getElementById('fName').focus();
+}
+
+// Photo
+function capturePhoto() { document.getElementById('photoInputCamera').click(); }
+function pickPhoto() { document.getElementById('photoInput').click(); }
+
+document.getElementById('fDate').addEventListener('change', () => {
+  const val = document.getElementById('fDate').value;
+  document.querySelectorAll('#dateBtnRow .date-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-date') === val);
+  });
+});
+
+document.getElementById('photoInput').addEventListener('change', async (e) => {
+  const files = Array.from(e.target.files);
+  for (const file of files) {
+    const blob = await compressImage(file);
+    currentPhotos.push({ blob, mime: blob.type });
+  }
+  renderPhotoPreview();
+  e.target.value = '';
+});
+document.getElementById('photoInputCamera').addEventListener('change', async (e) => {
+  const files = Array.from(e.target.files);
+  for (const file of files) {
+    const blob = await compressImage(file);
+    currentPhotos.push({ blob, mime: blob.type });
+  }
+  renderPhotoPreview();
+  e.target.value = '';
+});
+
+async function compressImage(file) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      let w = img.width, h = img.height;
+      const max = 1280;
+      if (w > max || h > max) {
+        if (w > h) { h = Math.round(h * max / w); w = max; }
+        else { w = Math.round(w * max / h); h = max; }
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, w, h);
+      canvas.toBlob((blob) => {
+        URL.revokeObjectURL(url);
+        resolve(blob);
+      }, 'image/jpeg', 0.8);
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); resolve(file); };
+    img.src = url;
+  });
+}
+
+function renderPhotoPreview() {
+  const div = document.getElementById('photoPreview');
+  if (currentPhotos.length === 0) { div.innerHTML = ''; return; }
+  let html = '<div class="photo-grid">';
+  currentPhotos.forEach((p, i) => {
+    const url = URL.createObjectURL(p.blob);
+    html += `<div class="photo-thumb-wrap"><img class="photo-thumb" src="${url}"><button class="photo-remove-btn" onclick="removePhoto(${i})">✕</button></div>`;
+  });
+  html += '</div>';
+  html += `<div style="font-size:13px;color:var(--text-light);margin-top:4px;">${currentPhotos.length} photo(s) ${currentPhotos.length}张照片 · Tap camera/album to add more 点拍照/相册可继续添加</div>`;
+  div.innerHTML = html;
+}
+function removePhoto(idx) {
+  currentPhotos.splice(idx, 1);
+  renderPhotoPreview();
+}
+function removeExistingPhoto(idx, photoId) {
+  removedPhotoIds.push(photoId);
+  const el = document.getElementById('existingPhoto' + idx);
+  if (el) el.remove();
+  // Update count text
+  const photoDiv = document.getElementById('photoPreview');
+  const grid = photoDiv.querySelector('.photo-grid');
+  const remaining = grid ? grid.children.length : 0;
+  const countDiv = photoDiv.querySelector('div[style*="font-size:13px"]');
+  if (countDiv) countDiv.textContent = `${remaining} existing photo(s) 已有${remaining}张 · Add more with camera/album 点拍照/相册可继续添加`;
+}
+
+// Video
+function captureVideo() { document.getElementById('videoInputCamera').click(); }
+function pickVideo() { document.getElementById('videoInput').click(); }
+
+document.getElementById('videoInput').addEventListener('change', async (e) => {
+  if (e.target.files[0]) {
+    const file = e.target.files[0];
+    if (file.size > 100 * 1024 * 1024) { toast('Video too large (over 100MB) 视频太大'); e.target.value = ''; return; }
+    currentVideoBlob = file;
+    currentVideoMime = file.type || 'video/mp4';
+    renderVideoPreview();
+  }
+  e.target.value = '';
+});
+document.getElementById('videoInputCamera').addEventListener('change', async (e) => {
+  if (e.target.files[0]) {
+    const file = e.target.files[0];
+    if (file.size > 100 * 1024 * 1024) { toast('Video too large (over 100MB) 视频太大'); e.target.value = ''; return; }
+    currentVideoBlob = file;
+    currentVideoMime = file.type || 'video/mp4';
+    renderVideoPreview();
+  }
+  e.target.value = '';
+});
+
+function renderVideoPreview() {
+  const div = document.getElementById('videoPreview');
+  if (!currentVideoBlob) { div.innerHTML = ''; return; }
+  const url = URL.createObjectURL(currentVideoBlob);
+  const sizeMB = (currentVideoBlob.size / 1024 / 1024).toFixed(1);
+  div.innerHTML = `<div class="media-preview"><video src="${url}" controls></video><div style="padding:8px;background:#f3f4f6;font-size:13px;color:#6b7280;text-align:center;">Video size: ${sizeMB} MB</div><button class="remove-media" onclick="removeVideo()">Remove Video 删除视频</button></div>`;
+}
+function removeVideo() { currentVideoBlob = null; renderVideoPreview(); }
+
+// Save
+async function saveContact() {
+  const name = document.getElementById('fName').value.trim();
+  if (!name) { toast('Please enter name 请填写姓名'); document.getElementById('fName').focus(); return; }
+  const company = document.getElementById('fCompany').value.trim();
+  if (!company) { toast('Please enter company 请填写公司'); document.getElementById('fCompany').focus(); return; }
+  const email = document.getElementById('fEmail').value.trim();
+  if (!email) { toast('Please enter email 请填写邮箱'); document.getElementById('fEmail').focus(); return; }
+  const staff = '';
+  const managerEl = document.querySelector('input[name="fManager"]:checked');
+  const accountManager = managerEl ? managerEl.value : '';
+  if (!accountManager) { toast('Please select account manager 请选择客户负责人'); return; }
+
+  // Check if at least one photo exists (new or existing not removed)
+  let hasExistingPhotos = false;
+  if (editingId) {
+    const existing = await dbGet(STORE_CONTACTS, editingId);
+    if (existing) {
+      const existingPhotoIds = existing.photoIds || (existing.photoId ? [existing.photoId] : []);
+      hasExistingPhotos = existingPhotoIds.filter(id => !removedPhotoIds.includes(id)).length > 0;
+    }
+  }
+  if (currentPhotos.length === 0 && !hasExistingPhotos) {
+    toast('Please add at least one photo 请至少添加一张合照');
+    return;
+  }
+
+  const contact = {
+    id: editingId || genId(),
+    date: document.getElementById('fDate').value,
+    staff: staff,
+    name: name,
+    country: document.getElementById('fCountry').value.trim(),
+    company: company,
+    title: document.getElementById('fTitle').value.trim(),
+    phone: document.getElementById('fPhone').value.trim(),
+    email: email,
+    other: document.getElementById('fOther').value.trim(),
+    accountManager: accountManager,
+    photoIds: [],
+    videoId: null,
+    updatedAt: Date.now()
+  };
+
+  // Handle photos: keep existing ones not removed, add new ones
+  if (editingId) {
+    const existing = await dbGet(STORE_CONTACTS, editingId);
+    if (existing) {
+      // Keep existing photo IDs that weren't removed
+      const existingPhotoIds = existing.photoIds || (existing.photoId ? [existing.photoId] : []);
+      contact.photoIds = existingPhotoIds.filter(id => !removedPhotoIds.includes(id));
+      // Delete removed photos from media store
+      for (const rid of removedPhotoIds) await dbDelete(STORE_MEDIA, rid);
+      if (!currentVideoBlob && existing.videoId) contact.videoId = existing.videoId;
+    }
+  }
+
+  // Add new photos
+  for (const p of currentPhotos) {
+    const photoId = genId();
+    await dbAdd(STORE_MEDIA, { id: photoId, blob: p.blob, mime: p.mime, type: 'photo', contactId: contact.id });
+    contact.photoIds.push(photoId);
+  }
+
+  if (currentVideoBlob) {
+    const videoId = genId();
+    await dbAdd(STORE_MEDIA, { id: videoId, blob: currentVideoBlob, mime: currentVideoMime, type: 'video', contactId: contact.id });
+    if (editingId) {
+      const existing = await dbGet(STORE_CONTACTS, editingId);
+      if (existing && existing.videoId) await dbDelete(STORE_MEDIA, existing.videoId);
+    }
+    contact.videoId = videoId;
+  }
+
+  await dbAdd(STORE_CONTACTS, contact);
+
+  toast(editingId ? 'Updated 已更新' : 'Saved 已保存！');
+  editingId = null;
+  document.getElementById('editIndicator').innerHTML = '';
+  document.getElementById('cancelEditWrap').style.display = 'none';
+  document.getElementById('cancelBtnFloat').style.display = 'none';
+  resetForm();
+  document.getElementById('pageTitle').textContent = 'Timori Photo';
+  document.getElementById('saveBtn').textContent = 'Save 保存';
+  document.getElementById('saveBtnFloat').textContent = 'Save 保存';
+  setTimeout(() => goList(), 600);
+}
+
+function cancelEdit() {
+  editingId = null;
+  document.getElementById('editIndicator').innerHTML = '';
+  document.getElementById('cancelEditWrap').style.display = 'none';
+  document.getElementById('cancelBtnFloat').style.display = 'none';
+  resetForm();
+  document.getElementById('pageTitle').textContent = 'Timori Photo';
+  document.getElementById('saveBtn').textContent = 'Save 保存';
+  document.getElementById('saveBtnFloat').textContent = 'Save 保存';
+  goList();
+}
+
+// ============ List ============
+async function renderList() {
+  let contacts = await dbGetAll(STORE_CONTACTS);
+
+  const container = document.getElementById('listContent');
+  if (contacts.length === 0) {
+    container.innerHTML = `<div class="list-empty"><div class="icon">📋</div><p>No contacts yet 还没有联系人</p><p class="sub">Tap "Add" to start 点「录入」开始记录</p></div><div style="padding:20px 16px;"><button style="width:100%;font-size:18px;font-weight:700;padding:16px;border:none;border-radius:12px;background:var(--primary);color:#fff;cursor:pointer;" onclick="doExport()">📤 Export 导出 Excel + Photos</button></div>`;
+    return;
+  }
+
+  // Group by account manager
+  const groups = {};
+  contacts.forEach(c => {
+    const manager = c.accountManager || 'Unassigned 未分配';
+    if (!groups[manager]) groups[manager] = [];
+    groups[manager].push(c);
+  });
+
+  // Manager display order: Zoey, Katherine, Qiucen, then others
+  const managerOrder = ['Zoey', 'Katherine', 'Qiucen'];
+  const allKeys = Object.keys(groups).sort((a, b) => {
+    const ia = managerOrder.indexOf(a);
+    const ib = managerOrder.indexOf(b);
+    if (ia === -1 && ib === -1) return a.localeCompare(b);
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
+  });
+
+  let html = '';
+  for (const managerName of allKeys) {
+    const items = groups[managerName];
+    // Sort each group by date descending, then updatedAt
+    items.sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.updatedAt || 0) - (a.updatedAt || 0));
+    html += `<div class="date-group"><h3>👤 ${esc(managerName)}（${items.length}）</h3>`;
+    for (const c of items) {
+      const photoIds = c.photoIds || (c.photoId ? [c.photoId] : []);
+      const firstPhotoId = photoIds[0];
+      let thumb = `<div class="contact-thumb-placeholder">${c.name.charAt(0).toUpperCase()}</div>`;
+      if (firstPhotoId) thumb = `<img class="contact-thumb" src="${await getMediaURL(firstPhotoId)}">`;
+      const badges = [];
+      if (photoIds.length > 0) badges.push(`<span class="badge badge-photo">📷${photoIds.length > 1 ? photoIds.length : ''}</span>`);
+      if (c.videoId) badges.push('<span class="badge badge-video">🎥</span>');
+      html += `<div class="contact-card" onclick="goDetail('${c.id}')">
+        ${thumb}
+        <div class="contact-info">
+          <div class="name">${esc(c.name)}</div>
+          <div class="sub">${esc(c.country || '')}${c.company ? (c.country ? ' · ' : '') + esc(c.company) : ''}${c.title ? ' · ' + esc(c.title) : ''}${c.date ? ' · ' + esc(c.date) : ''}</div>
+          ${badges.length ? `<div class="badges">${badges.join('')}</div>` : ''}
+        </div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Export button at bottom of list
+  html += `<div style="padding:20px 16px 24px;"><button style="width:100%;font-size:18px;font-weight:700;padding:16px;border:none;border-radius:12px;background:var(--primary);color:#fff;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.1),0 1px 2px rgba(0,0,0,0.06);" onclick="doExport()">📤 Export 导出 Excel + Photos</button></div>`;
+
+  container.innerHTML = html;
+}
+
+async function getMediaURL(mediaId) {
+  if (!mediaId) return '';
+  const media = await dbGet(STORE_MEDIA, mediaId);
+  if (!media) return '';
+  return URL.createObjectURL(media.blob);
+}
+
+// ============ Detail ============
+async function renderDetail(id) {
+  const c = await dbGet(STORE_CONTACTS, id);
+  if (!c) { toast('Contact not found 找不到联系人'); goList(); return; }
+
+  const photoIds = c.photoIds || (c.photoId ? [c.photoId] : []);
+
+  let photoHTML = '';
+  if (photoIds.length > 0) {
+    let imgs = '';
+    for (const pid of photoIds) {
+      const url = await getMediaURL(pid);
+      imgs += `<img class="media-large" src="${url}" style="margin-bottom:8px;">`;
+    }
+    photoHTML = `<div class="detail-section"><div class="label">Photo 合照 (${photoIds.length})</div>${imgs}</div>`;
+  }
+  let videoHTML = '';
+  if (c.videoId) {
+    const url = await getMediaURL(c.videoId);
+    videoHTML = `<div class="detail-section"><div class="label">Video 视频</div><video class="media-large" src="${url}" controls></video></div>`;
+  }
+
+  const firstPhotoId = photoIds[0];
+  const thumb = firstPhotoId
+    ? `<img class="detail-avatar" src="${await getMediaURL(firstPhotoId)}">`
+    : `<div class="detail-avatar-placeholder">${c.name.charAt(0).toUpperCase()}</div>`;
+
+  let sections = '';
+  if (c.staff) sections += detailRow('Reception Staff 接待人员', c.staff, false);
+  if (c.accountManager) sections += detailRow('Account Manager 客户负责人', c.accountManager, false);
+  if (c.country) sections += detailRow('Country 国家', c.country, false);
+  if (c.phone) sections += detailRow('Phone 电话', c.phone, true);
+  if (c.email) sections += detailRow('Email 邮箱', c.email, true);
+  if (c.other) sections += detailRow('Other Contact 其他联系方式', c.other, false);
+
+  document.getElementById('detailContent').innerHTML = `
+    <div class="detail-header">
+      ${thumb}
+      <div class="info">
+        <div class="name">${esc(c.name)}</div>
+        <div class="sub">${esc(c.country || '')}${c.company ? (c.country ? ' · ' : '') + esc(c.company) : ''}${c.title ? ' · ' + esc(c.title) : ''}</div>
+        <div style="font-size:13px;color:var(--text-light);margin-top:4px;">${esc(c.date || '')}</div>
+      </div>
+    </div>
+    ${photoHTML}
+    ${videoHTML}
+    ${sections}
+    <div class="detail-actions">
+      <button class="btn-secondary" onclick="editContact('${c.id}')">Edit 修改</button>
+      <button class="btn-danger" onclick="deleteContact('${c.id}')">Delete 删除</button>
+    </div>
+  `;
+}
+
+function detailRow(label, value, isLink) {
+  let val = esc(value);
+  if (isLink && label.startsWith('Phone')) val = `<a href="tel:${esc(value)}">${esc(value)}</a>`;
+  if (isLink && label.startsWith('Email')) val = `<a href="mailto:${esc(value)}">${esc(value)}</a>`;
+  return `<div class="detail-section"><div class="label">${label}</div><div class="value">${val}</div></div>`;
+}
+
+function esc(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Edit
+async function editContact(id) {
+  const c = await dbGet(STORE_CONTACTS, id);
+  if (!c) return;
+
+  editingId = id;
+  syncDateButtons(c.date || todayStr());
+  document.getElementById('fName').value = c.name || '';
+  const countrySelect = document.getElementById('fCountry');
+  if (c.country && ![...countrySelect.options].some(o => o.value === c.country)) {
+    const opt = document.createElement('option');
+    opt.value = c.country; opt.textContent = c.country;
+    countrySelect.appendChild(opt);
+  }
+  countrySelect.value = c.country || 'USA 美国';
+  document.getElementById('fCompany').value = c.company || '';
+  document.getElementById('fTitle').value = c.title || '';
+  document.getElementById('fPhone').value = c.phone || '';
+  document.getElementById('fEmail').value = c.email || '';
+  document.getElementById('fOther').value = c.other || '';
+  // Load account manager
+  document.querySelectorAll('input[name="fManager"]').forEach(el => el.checked = false);
+  if (c.accountManager) {
+    const mgrMap = { 'Zoey': 'fManager1', 'Katherine': 'fManager2', 'Qiucen': 'fManager3' };
+    const id = mgrMap[c.accountManager];
+    if (id) document.getElementById(id).checked = true;
+  }
+
+  currentPhotos = [];
+  removedPhotoIds = [];
+  currentVideoBlob = null;
+
+  const photoIds = c.photoIds || (c.photoId ? [c.photoId] : []);
+  const photoDiv = document.getElementById('photoPreview');
+  if (photoIds.length > 0) {
+    // Show existing photos as thumbnails with remove option
+    let html = '<div class="photo-grid">';
+    for (let i = 0; i < photoIds.length; i++) {
+      const url = await getMediaURL(photoIds[i]);
+      html += `<div class="photo-thumb-wrap" id="existingPhoto${i}"><img class="photo-thumb" src="${url}"><button class="photo-remove-btn" onclick="removeExistingPhoto(${i}, '${photoIds[i]}')">✕</button></div>`;
+    }
+    html += '</div>';
+    html += `<div style="font-size:13px;color:var(--text-light);margin-top:4px;">${photoIds.length} existing photo(s) 已有${photoIds.length}张 · Add more with camera/album 点拍照/相册可继续添加</div>`;
+    photoDiv.innerHTML = html;
+  } else {
+    photoDiv.innerHTML = '';
+  }
+
+  const videoDiv = document.getElementById('videoPreview');
+  if (c.videoId) {
+    const url = await getMediaURL(c.videoId);
+    const v = await dbGet(STORE_MEDIA, c.videoId);
+    const sizeMB = v ? (v.blob.size / 1024 / 1024).toFixed(1) : '?';
+    videoDiv.innerHTML = `<div class="media-preview"><video src="${url}" controls></video><div style="padding:8px;background:#f3f4f6;font-size:13px;color:#6b7280;text-align:center;">Existing video ${sizeMB}MB 已有视频（re-recording will replace 重新录像将替换）</div></div>`;
+  } else {
+    videoDiv.innerHTML = '';
+  }
+
+  document.getElementById('editIndicator').innerHTML = '<div class="edit-badge">Edit Mode 编辑模式</div>';
+  document.getElementById('cancelEditWrap').style.display = 'block';
+  document.getElementById('cancelBtnFloat').style.display = 'block';
+  document.getElementById('saveBtn').textContent = 'Update 更新';
+  document.getElementById('saveBtnFloat').textContent = 'Update 更新';
+  goForm();
+}
+
+// Delete
+async function deleteContact(id) {
+  if (!confirm('Delete this contact? Photo & video will also be deleted. 确定删除？照片视频也会一起删除。')) return;
+  const c = await dbGet(STORE_CONTACTS, id);
+  if (c) {
+    const photoIds = c.photoIds || (c.photoId ? [c.photoId] : []);
+    for (const pid of photoIds) await dbDelete(STORE_MEDIA, pid);
+    if (c.videoId) await dbDelete(STORE_MEDIA, c.videoId);
+  }
+  await dbDelete(STORE_CONTACTS, id);
+  toast('Deleted 已删除');
+  goList();
+}
+
+// ============ Export ============
+async function doExport() {
+  showOverlay('Preparing export 准备导出...');
+  try {
+    const contacts = await dbGetAll(STORE_CONTACTS);
+    if (contacts.length === 0) {
+      hideOverlay();
+      toast('No contacts to export 没有联系人可导出');
+      return;
+    }
+    contacts.sort((a, b) => (a.date || '').localeCompare(b.date || '') || (a.name || '').localeCompare(b.name || ''));
+
+    showOverlay('Generating Excel 生成 Excel...');
+
+    let rows = contacts.map(c => {
+      const photoIds = c.photoIds || (c.photoId ? [c.photoId] : []);
+      const baseName = sanitizeFilename(c.date + '_' + c.country + '_' + c.company + '_' + c.name) || sanitizeFilename(c.name) || c.id;
+      return {
+        date: c.date || '',
+        staff: c.staff || '',
+        name: c.name || '',
+        country: c.country || '',
+        company: c.company || '',
+        title: c.title || '',
+        phone: c.phone || '',
+        email: c.email || '',
+        other: c.other || '',
+        accountManager: c.accountManager || '',
+        hasPhoto: photoIds.length > 0 ? `Yes (${photoIds.length}) 是` : 'No 否',
+        hasVideo: c.videoId ? 'Yes 是' : 'No 否',
+        photoFile: photoIds.length > 0 ? photoIds.map((_, i) => baseName + (photoIds.length > 1 ? '_' + (i+1) : '') + '.jpg').join(', ') : '',
+        videoFile: c.videoId ? baseName + '.mp4' : ''
+      };
+    });
+
+    const excelXML = buildExcelXML(rows);
+    const excelBlob = new Blob([excelXML], { type: 'application/vnd.ms-excel' });
+
+    showOverlay('Packing media 打包照片视频...');
+
+    let jszip = null;
+    try { jszip = await loadJSZip(); } catch(e) { console.warn('JSZip load failed', e); }
+
+    if (jszip) {
+      showOverlay('Zipping 正在打包...');
+      const zip = new jszip();
+      zip.file('Contacts 联系人列表.xls', excelBlob);
+
+      const mediaFolder = zip.folder('Media 媒体文件');
+      for (const c of contacts) {
+        const baseName = sanitizeFilename(c.date + '_' + c.country + '_' + c.company + '_' + c.name) || sanitizeFilename(c.name) || c.id;
+        const photoIds = c.photoIds || (c.photoId ? [c.photoId] : []);
+        for (let i = 0; i < photoIds.length; i++) {
+          const media = await dbGet(STORE_MEDIA, photoIds[i]);
+          if (media) {
+            const ext = media.mime && media.mime.includes('png') ? 'png' : 'jpg';
+            const suffix = photoIds.length > 1 ? '_' + (i+1) : '';
+            mediaFolder.file(baseName + suffix + '.' + ext, media.blob);
+          }
+        }
+        if (c.videoId) {
+          const media = await dbGet(STORE_MEDIA, c.videoId);
+          if (media) {
+            let ext = 'mp4';
+            if (media.mime && media.mime.includes('quicktime')) ext = 'mov';
+            else if (media.mime && media.mime.includes('webm')) ext = 'webm';
+            mediaFolder.file(baseName + '.' + ext, media.blob);
+          }
+        }
+      }
+
+      zip.file('Readme 说明.txt', `IAAAPA Contacts Export 联系人导出\nExport time 导出时间: ${new Date().toLocaleString('en-US')}\nContact count 联系人数量: ${contacts.length}\n\nFile info 文件说明:\n- Contacts 联系人列表.xls: Excel spreadsheet with all contact info\n- Media 媒体文件/: photos & videos, named by Date_Country_Company_Name\n`);
+
+      showOverlay('Generating zip 生成压缩包...');
+      const content = await zip.generateAsync({ type: 'blob' }, (meta) => {
+        if (meta.percent % 10 < 1) document.getElementById('overlayText').textContent = `Zipping... ${Math.round(meta.percent)}%`;
+      });
+
+      downloadBlob(content, `IAAAPA_Contacts_${todayStr()}.zip`);
+      hideOverlay();
+      toast('Export complete 导出完成！', 3000);
+    } else {
+      hideOverlay();
+      downloadBlob(excelBlob, `IAAAPA_Contacts_${todayStr()}.xls`);
+      toast('Excel downloaded, downloading media... Excel已下载，正在下载媒体...', 3000);
+
+      for (const c of contacts) {
+        const baseName = sanitizeFilename(c.date + '_' + c.country + '_' + c.company + '_' + c.name) || c.name || c.id;
+        const photoIds = c.photoIds || (c.photoId ? [c.photoId] : []);
+        for (let i = 0; i < photoIds.length; i++) {
+          const media = await dbGet(STORE_MEDIA, photoIds[i]);
+          if (media) {
+            const ext = media.mime && media.mime.includes('png') ? 'png' : 'jpg';
+            const suffix = photoIds.length > 1 ? '_' + (i+1) : '';
+            downloadBlob(media.blob, baseName + suffix + '.' + ext);
+            await sleep(500);
+          }
+        }
+        if (c.videoId) {
+          const media = await dbGet(STORE_MEDIA, c.videoId);
+          if (media) {
+            let ext = 'mp4';
+            if (media.mime && media.mime.includes('quicktime')) ext = 'mov';
+            else if (media.mime && media.mime.includes('webm')) ext = 'webm';
+            downloadBlob(media.blob, baseName + '.' + ext);
+            await sleep(500);
+          }
+        }
+      }
+      toast('All exported 全部导出完成', 3000);
+    }
+  } catch(err) {
+    console.error(err);
+    hideOverlay();
+    toast('Export error 导出出错: ' + err.message, 4000);
+  }
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function downloadBlob(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function loadJSZip() {
+  return new Promise((resolve, reject) => {
+    if (window.JSZip) { resolve(window.JSZip); return; }
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js';
+    script.onload = () => { window.JSZip ? resolve(window.JSZip) : reject(new Error('JSZip not loaded')); };
+    script.onerror = () => reject(new Error('Failed to load JSZip'));
+    document.head.appendChild(script);
+  });
+}
+
+function buildExcelXML(rows) {
+  const headers = ['Date 日期', 'Reception Staff 接待人员', 'Name 姓名', 'Country 国家', 'Company 公司', 'Title 职位', 'Phone 电话', 'Email 邮箱', 'Other Contact 其他联系方式', 'Account Manager 客户负责人', 'Has Photo 有合照', 'Has Video 有视频', 'Photo File 合照文件名', 'Video File 视频文件名'];
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<?mso-application progid="Excel.Sheet"?>\n';
+  xml += '<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">\n';
+  xml += '<Styles><Style ss:ID="head"><Font ss:Bold="1" ss:Size="12"/><Interior ss:Color="#D9E1F2" ss:Pattern="Solid"/></Style></Styles>\n';
+  xml += '<Worksheet ss:Name="Contacts 联系人">\n';
+  xml += '<Table>\n';
+  xml += '<Row>';
+  headers.forEach(h => { xml += `<Cell ss:StyleID="head"><Data ss:Type="String">${esc(h)}</Data></Cell>`; });
+  xml += '</Row>\n';
+  rows.forEach(r => {
+    xml += '<Row>';
+    const vals = [r.date, r.staff, r.name, r.country, r.company, r.title, r.phone, r.email, r.other, r.accountManager, r.hasPhoto, r.hasVideo, r.photoFile, r.videoFile];
+    vals.forEach(v => { xml += `<Cell><Data ss:Type="String">${esc(v)}</Data></Cell>`; });
+    xml += '</Row>\n';
+  });
+  xml += '</Table>\n</Worksheet>\n</Workbook>';
+  return xml;
+}
+
+// ============ Init ============
+(async function init() {
+  try {
+    await openDB();
+    initForm();
+  } catch(e) {
+    console.error('DB init error', e);
+    toast('Database init failed 数据库初始化失败', 4000);
+  }
+})();
+
+document.addEventListener('submit', e => e.preventDefault());
+
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && !editingId) syncDateButtons(todayStr());
+});
+</script>
+</body></html>
